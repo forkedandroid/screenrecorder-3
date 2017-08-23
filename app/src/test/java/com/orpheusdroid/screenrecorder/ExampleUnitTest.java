@@ -1,4 +1,4 @@
-package com.orpheusdroid.screenrecorder;
+package com.azteam.screenrecorder;
 
 import org.junit.Test;
 

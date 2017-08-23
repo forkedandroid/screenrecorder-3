@@ -1,21 +1,4 @@
-/*
- * Copyright (c) 2016. Vijai Chandra Prasad R.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see http://www.gnu.org/licenses
- */
-
-package com.orpheusdroid.screenrecorder;
+package com.azteam.screenrecorder;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -60,9 +43,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by vijai on 12-10-2016.
- */
 //TODO: Update icons for notifcation
 public class RecorderService extends Service{
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
@@ -157,7 +137,7 @@ public class RecorderService extends Service{
                         //Send a broadcast receiver to the plugin app to enable show touches since the recording is started
                         if(showTouches){
                             Intent TouchIntent = new Intent();
-                            TouchIntent.setAction("com.orpheusdroid.screenrecorder.SHOWTOUCH");
+                            TouchIntent.setAction("com.azteam.screenrecorder.SHOWTOUCH");
                             TouchIntent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
                             sendBroadcast(TouchIntent);
                         }
@@ -203,7 +183,7 @@ public class RecorderService extends Service{
                 //Send a broadcast receiver to the plugin app to disable show touches since the recording is stopped
                 if(showTouches){
                     Intent TouchIntent = new Intent();
-                    TouchIntent.setAction("com.orpheusdroid.screenrecorder.DISABLETOUCH");
+                    TouchIntent.setAction("com.azteam.screenrecorder.DISABLETOUCH");
                     TouchIntent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
                     sendBroadcast(TouchIntent);
                 }
@@ -236,7 +216,7 @@ public class RecorderService extends Service{
         //Send a broadcast receiver to the plugin app to disable show touches since the recording is paused
         if(showTouches){
             Intent TouchIntent = new Intent();
-            TouchIntent.setAction("com.orpheusdroid.screenrecorder.DISABLETOUCH");
+            TouchIntent.setAction("com.azteam.screenrecorder.DISABLETOUCH");
             TouchIntent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
             sendBroadcast(TouchIntent);
         }
@@ -267,7 +247,7 @@ public class RecorderService extends Service{
         if(showTouches){
             if(showTouches){
                 Intent TouchIntent = new Intent();
-                TouchIntent.setAction("com.orpheusdroid.screenrecorder.SHOWTOUCH");
+                TouchIntent.setAction("com.azteam.screenrecorder.SHOWTOUCH");
                 TouchIntent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
                 sendBroadcast(TouchIntent);
             }

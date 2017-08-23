@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2016. Vijai Chandra Prasad R.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see http://www.gnu.org/licenses
-  -->
+<?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/prefs_category_video_settings_title">
@@ -50,7 +35,7 @@
             android:title="@string/preference_audio_record_title" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/prefs_category_save_options_title">
-        <com.orpheusdroid.screenrecorder.folderpicker.FolderChooser
+        <com.azteam.screenrecorder.folderpicker.FolderChooser
             android:key="@string/savelocation_key"
             android:negativeButtonText="@android:string/cancel"
             android:positiveButtonText="@android:string/ok"
@@ -88,7 +73,7 @@
             android:summary="@string/preference_floating_control_summary"
             android:key="@string/preference_floating_control_key"
             android:defaultValue="false" />
-        <com.orpheusdroid.screenrecorder.SeekBarPreference
+        <com.azteam.screenrecorder.SeekBarPreference
             android:key="@string/preference_floating_control_size_key"
             android:summary="@string/preference_floating_control_size_summary"
             android:title="@string/preference_floating_control_size_title"

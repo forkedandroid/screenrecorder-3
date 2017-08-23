@@ -1,22 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2016. Vijai Chandra Prasad R.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see http://www.gnu.org/licenses
--->
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.orpheusdroid.screenrecorder">
+    package="com.azteam.screenrecorder">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -24,7 +9,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="com.orpheusdroid.screenrecorder.TOGGLETOUCHES" />
+    <uses-permission android:name="com.azteam.screenrecorder.TOGGLETOUCHES" />
 
     <application
         android:allowBackup="true"
@@ -77,10 +62,10 @@
                     android:host="screenrecording"
                     android:scheme="od" />
                 <data
-                    android:host="screenrecord.orpheusdroid.com"
+                    android:host="screenrecord.azteam.com"
                     android:scheme="https" />
                 <data
-                    android:host="screenrecord.orpheusdroid.com"
+                    android:host="screenrecord.azteam.com"
                     android:scheme="http" />
             </intent-filter>
         </activity>
@@ -99,6 +84,18 @@
             android:name=".PrivacyPolicy"
             android:label="Privacy Policy" />
         <activity android:name=".EditVideoActivity" />
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ActAds"
+            android:label="@string/title_activity_act_ads"></activity> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
     </application>
 
 </manifest>
