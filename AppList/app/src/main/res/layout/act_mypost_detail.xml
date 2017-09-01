@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:id="@+id/rlPostDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+
+    <LinearLayout
+        android:id="@+id/llMainFrame"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <Button
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnA" />
+
+
+        <Button
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnB" />
+
+
+        <Button
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnC" />
+    </LinearLayout>
+        <RelativeLayout
+            android:visibility="visible"
+            xmlns:EMVideoView="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                />
+        <!--    <io.vov.vitamio.widget.VideoView
+                android:id="@+id/vitamio_videoView"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+
+
+            <com.devbrackets.android.exomedia.ui.widget.EMVideoView
+                android:id="@+id/emVideoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                EMVideoView:useDefaultControls="true"
+                android:background="@color/black" />
+
+         </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

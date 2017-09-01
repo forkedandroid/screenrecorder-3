@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrBg">
+
+
+    <RelativeLayout
+        android:padding="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCode"
+            android:layout_marginTop="35dp"
+
+            android:layout_centerHorizontal="true">
+            <Button
+                android:text="LOGIN"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etCode"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="20dp"
+                android:textColor="@color/btn_txt_color"
+                android:background="@drawable/btn_home_ripple"
+                android:id="@+id/btnLogin" />
+
+
+
+            <Button
+                android:text="SKIP >> "
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etCode"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/btn_txt_color"
+                android:background="@drawable/btn_home_ripple"
+                android:id="@+id/btnSkip" />
+        </LinearLayout>
+
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:clickable="false"
+
+            android:id="@+id/button2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_icon_a"
+            android:id="@+id/imageView"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Confrimation code"
+            android:gravity="top|center_horizontal"
+
+            android:backgroundTint="@color/white2"
+            android:minHeight="56dp"
+            android:minWidth="280dp"
+            android:textColor="@color/primaryPressed"
+            android:textColorHint="@color/primaryPressed"
+            android:textSize="18dp"
+            android:id="@+id/etCode"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            >
+            <requestFocus/>
+        </EditText>
+    </RelativeLayout>
+</LinearLayout>

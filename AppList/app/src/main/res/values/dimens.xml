@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Screen margins -->
+    <dimen name="screen_padding_sides">16dp</dimen>
+
+    <!-- Preview (grid item) dimensions -->
+    <dimen name="kitten_preview_size">120dp</dimen>
+    <dimen name="kitten_preview_padding">16dp</dimen>
+
+    <!-- Details dimensions -->
+    <dimen name="details_image_size">240dp</dimen>
+    <dimen name="details_top_spacing">48dp</dimen>
+
+
+
+
+
+
+
+
+
+    <dimen name="m_d7">7dp</dimen>
+    <dimen name="m_d56">56dp</dimen>
+
+
+
+    <!--for the base menu screen-->
+    <!--for the common -->
+    <dimen name="bsm_header_menu43d">40dp</dimen>
+    <dimen name="bsm_header_43d">50dp</dimen>
+    <dimen name="bsm_header_txt_18d">18dp</dimen>
+    <dimen name="bsm_header_mrgn_5d">5dp</dimen>
+
+    <!-- for the drawer width -->
+    <dimen name="bsm_header_w260d">280dp</dimen>
+
+    <!-- for the menu_drawer_header_user.xml  show common header on drawer menu-->
+    <dimen name="bsm_menu_header_240d">200dp</dimen>
+    <dimen name="bsm_menu_header_p15d">17dp</dimen>
+    <dimen name="bsm_menu_header_p20d">25dp</dimen>
+
+    <dimen name="bsm_menu_header_130d">85dp</dimen>
+
+    <dimen name="bsm_menu_header_m7d">12dp</dimen>
+    <dimen name="bsm_menu_header_txt17d">15dp</dimen>
+    <dimen name="bsm_menu_header_txt27d">23dp</dimen>
+
+
+    <dimen name="radius_textview">15dp</dimen>
+
+</resources>

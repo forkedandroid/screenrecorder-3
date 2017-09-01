@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@color/clr_list_bg"
+    android:id="@+id/myCoordinator"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--android:fitsSystemWindows="true"-->
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
+
+            <!--android:layout_marginBottom="-30dp"-->
+            <!-- app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--<ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:background="#f0f"
+                android:src="@drawable/placekitten_3"
+                app:layout_collapseMode="parallax" />-->
+
+            <ImageView
+                android:id='@+id/image'
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/placekitten_3"
+                android:transitionName="kittenImage"
+                app:layout_collapseMode="parallax"
+                android:visibility="visible"
+                tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+
+
+                android:titleTextColor="@color/clr_d_title"
+                android:subtitleTextColor="@color/clr_d_title"
+                app:subtitleTextColor="@color/clr_d_title"
+                app:titleTextColor="@color/clr_d_title"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+   <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/htab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+
+   <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/btab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="16dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="7dp"
+                android:text="24 mins ago"
+                android:textColor="@color/clr_d_time"
+                android:textSize="15dp"
+
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+          <!--  <ImageView
+                android:id='@+id/image_anim'
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/placekitten_3"
+                android:transitionName="kittenImage"
+                app:layout_collapseMode="parallax"
+
+                tools:ignore="ContentDescription,UnusedAttribute" />-->
+
+
+
+            <TextView
+                android:id="@+id/tvDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="20dp"
+                android:text="Sit amet chocolate cake sweet macaroon chupa chups. Bear claw carrot cake chocolate bar biscuit chocolate cookie. Chocolate sesame snaps candy canes bear claw dragée tootsie roll.
+
+                Sit amet chocolate cake sweet macaroon chupa chups. Bear claw carrot cake chocolate bar biscuit chocolate cookie. Chocolate sesame snaps candy canes bear claw dragée tootsie roll.
+
+                Sit amet chocolate cake sweet macaroon chupa chups. Bear claw carrot cake chocolate bar biscuit chocolate cookie. Chocolate sesame snaps candy canes bear claw dragée tootsie roll."
+                android:textColor="@color/clr_d_detail"
+                android:textSize="17dp"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

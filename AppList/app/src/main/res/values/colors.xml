@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+
+    <color name="primaryPressed">#003470</color>
+    <color name="primaryFocused">#003470</color>
+    <color name="primary">#235BA8</color><!-- 00FFFFFF -->
+
+
+
+
+
+
+
+    <!--for the raw_wish_cardview-->
+    <color name="clr_list_bg">#EAEAEA</color>
+    <color name="clr_txt_gray">#999999</color>
+    <color name="clr_txt_name">#333333</color>
+
+    <!--for the detail screen-->
+    <color name="clr_d_title">#333333</color>
+    <color name="clr_d_detail">#676767</color>
+    <color name="clr_d_time">#999999</color>
+
+
+
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#99FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="red">#d33719</color>
+    <color name="light_gray">#EBEBEB</color>
+    <color name="green_bg">#b2d500</color>
+    <color name="dark_gray">#666</color>
+    <color name="green_text">#a7c84f</color>
+    <color name="black2">#000</color>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- for the activity_base -->
+    <color name="clrBlackHeader">#000000</color>
+    <color name="clrLineMenu">#7f7f7f</color>
+    
+    <color name="clrSubMenuLight">#666666</color>
+    <!-- for the home screen -->
+    <color name="clrGrayLineDivider">#EBEBEB</color>
+    <color name="clrGrayLine">#EBEBEB</color>
+    <color name="clrGrayFooter">#EBEBEB</color>
+    
+    <color name="clrTxtFooter">#333333</color>
+    <color name="clrBtnFooter">#000000</color>
+    
+    <!-- for the activity_sell_product -->
+    <color name="gray">#EBEBEB</color>
+    
+     <color name="grayLine">#E3E3E3</color>
+    
+    
+    
+    
+    
+    
+    
+    <!-- Other Colors -->
+     <color name="clrSearchBg">#E6B9906A</color>
+    <color name="clrSearchRawBg">#B368472B</color>
+
+
+    <!--for the common color codes-->
+    <!-- for the button colors -->
+
+
+
+
+
+    <color name="HMprimaryPressed">#cfcfcf</color> <!-- @color/green_bg  07c5bc-->
+    <color name="HMprimaryFocused">#059E97</color>
+    <color name="HMprimary">#fafafa</color><!-- 00FFFFFF -->
+
+    <!-- for the list colors -->
+
+    <color name="primaryPressedList">#22000000</color>
+    <color name="primaryFocusedList">#22000000</color>
+    <color name="primaryList">#FFFFFF</color><!-- 00FFFFFF -->
+
+    <!--for the v-21 status color -->
+    <color name="clrStatusbar">#059E97</color>
+    <color name="clrScrollList">#65C8C6</color>
+
+    <color name="clrBg">#65C8C6</color>
+    <!--color for the base drawer menu-->
+    <color name="bgLogoImage">#65C8C6</color>
+    
+    <color name="clrTextMenu">#885328</color>
+    <color name="bgColorMenu">#ffffff</color>
+    <color name="clrHintSearch">#AAFFFFFF</color>
+    <color name="clrTxtSearch">#FFFFFF</color>
+
+
+    <!--color for the bottom screen menus-->
+    <color name="clrLineBottomMenu">#606060</color>
+    <color name="clrTextBottomMenu">#885328</color>
+
+    <!--for the location screen bg Edit text-->
+    <color name="clrLocBg">#A8753C</color>
+
+    <!--for the edit text white-->
+    <color name="clrHintWhite">#AAFFFFFF</color>
+    <color name="clrTxtWhite">#FFFFFF</color>
+
+    <!--for the download image screen-->
+    <color name="clrPeach">#885328</color>
+    <color name="bgTrWhite">#55FFFFFF</color>
+	
+	
+</resources>

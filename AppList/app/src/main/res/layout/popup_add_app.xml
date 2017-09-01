@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#99000000"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:layout_margin="32dp"
+        android:background="@drawable/white_round_rect"
+        android:orientation="vertical"
+        android:paddingLeft="7dip"
+        android:paddingTop="7dip"
+        android:paddingRight="7dip"
+        android:paddingBottom="7dip">
+
+       <!-- <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:hint="Enter phone number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_border"
+            android:inputType="phone"
+            android:ems="10"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="12dp"
+            android:hint="Enter app code"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/clr_d_detail"
+            android:inputType="text"
+            android:maxLength="5"
+            android:id="@+id/etCode" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="12dp"
+            android:hint="Enter app name"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/clr_d_detail"
+            android:inputType="text"
+            android:maxLength="250"
+            android:id="@+id/etName" />
+
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/primary"
+            android:textSize="18dp"
+            android:text="ADD" />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="CANCEL" />
+
+    </LinearLayout>
+
+</LinearLayout>
